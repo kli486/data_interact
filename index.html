@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Visualizations</title>
+    <style>
+        .centered-iframe {
+            display: block;
+            margin: 50 auto;
+        }
+        #pieChartFrame {
+            width: 65%;
+            height: 85vh;
+            border:none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            
+        }
+        #MapFrame {
+            width: 65%;
+            height: 80vh;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right:auto
+        }
+        #IntChart {
+            width: 70%;
+            height: 85vh;
+            border:none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+           
+        }
+        #SubplotFrame{
+            width: 100%;
+            height: 80vh;
+            border:none; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Canada Population Visualization  </h1>
+    <h4>Group: Yaqi Liu, Kuidong Li, Ruohan Zhao, Fangzhi Li</h4>
+    <h2>Part 1 </h2>
+    <h5> In this part we examine the Indigeneous(Inuit, Métis and First Nations) population in Canada. We use a pie chart to see the composition 
+        of Canada population, data is obtained from a modified version of the 2021 Canadian Census.
+
+    </h5>
+
+    <h5>The pie chart shows the percentage of population identity and percentage of the total Canadian population. You can mouse over the specific part 
+        to see the numeric number of that population.
+    </h5>
+    <center><iframe id="pieChartFrame" src="donut.html"></iframe></center>
+    
+    
+
+    <h2>Part 2 </h2>
+    <h5> In this part we create a choropleth map that shows the Indigeneous population information in Canadian Province. You can select population identity
+        from the top right corner, you can also choose to see percentage of indifenous population of each province. You can also mouse over each province to
+        see specific information.
+    </h5>
+    <iframe id="MapFrame" src="map.html" ></iframe>
+    
+
+
+    <h2>Part 3 </h2>
+    <h5> In this part we examine the correlation between mental health and social/socioeconomic factors. We create a scatter plot relating to food insecurity
+        and poor mental health population.
+    </h5>
+    <h5> In the scatter plots we considered different population identities and different sex of the population. You can mouse over to see specific 
+        information or click on the animation button below to see the difference in gender.
+    </h5>
+    
+    <iframe id='IntChart'src="scatter.html" width="100%" height="500px"></iframe>
+    
+    <h2>Part 5</h2>
+    <h5> In this part we consider the three provinces with the highest Indigeneous population percentage across Canada. And we create three subplots that
+        each shows the composition of their population like in part 1. 
+    </h5>
+    <iframe id="SubplotFrame" src="subplots.html" width="100%" height="500px"></iframe>
+</body>
+</html>
